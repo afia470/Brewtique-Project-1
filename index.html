@@ -9,71 +9,130 @@
     <body>
         <main>
             <header class="hero">
-                <img class="hero-img" src="" leading="lazy" src>
+                <img class="hero-img" leading="lazy" src="https://images.pexels.com/photos/683039/pexels-photo-683039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
                 <h1>The Brewtique:</h1>
                 <h2>Every Cup, a Masterpiece.</h2>
                 <p>Locally roasted, ethically sourced, brewed with passion in every drop.</p>
                 <div class="CTA buttons">
                     <a class="menu" href="#menu">View Menu</a>
-                    <a class="order" rel="noopener noreferrer" target="_blank" href="">Order Now</a> 
+                    <a class="order" href="#order-now">Order Now</a> 
             </header>
-        </div>
-        <section class="about-sec">
-            <div class="about-div">
-                <h3 class="about-title">About Us</h3>
-                <img src="" class="barista-team-img">
-                <p>Brewtique began with a simple idea: bring specialty coffee to the heart of our community. Founded by passionate baristas, we blend tradition, and the perfect espresso shot every time.</p>
-            </div>  
-        </section>
-        <section class="menu-section" id="menu">
-            <h3 class="menu-title">Menu</h3>
-            <p class="menu-summary">Handcrafted with love</p>
-            <div class="menu-filter">
-                <ul>
-                   <li><input type="radio">Hot Drinks</input></li>
-                   <li><input type="radio">Cold Drinks</input></li>
-                </ul>
-            </div>
-            <div class="menu-div">
-                <div class="menu-item cold">
-                    <img class="menu-img">
-                    <p>Brown Sugar Iced Coffee<span>$3.75</span></p>
+            <section class="about-sec">
+                <div class="about-div">
+                    <h3 class="about-title">About Us</h3>
+                    <img loading="lazy" src="https://images.pexels.com/photos/9409745/pexels-photo-9409745.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="barista-team-img">
+                    <p>Brewtique began with a simple idea: bring specialty coffee to the heart of our community. Founded by passionate baristas, we blend tradition, and the perfect espresso shot every time.</p>
+                </div>  
+            </section>
+            <section class="menu-section" id="menu">
+                <h3 class="menu-title">Menu</h3>
+                <p class="menu-summary">Handcrafted with love</p>
+                <div class="menu-filter">
+                    <ul>
+                        <li><input type="radio" name="filter-button" id="filter-all" checked><label for="fitler-all">All Drinks</label></li>
+                        <li><input type="radio" name="filter-button" id="filter-hot"><label for="filter-hot">Hot Drinks</label></li>
+                        <li><input type="radio" name="filter-button" id="filter cold"><label for="filter-cold">Cold Drinks</label<li>
+                    </ul>
                 </div>
-                <div class="menu-item">
-                    <img class="menu-img cold">
-                    <p>Vanilla Sweet Cream Cold Brew<span>$4.85</span></p>
+                <div class="menu-div">
+                    <div class="menu-item cold">
+                        <img class="menu-img" src="https://th.bing.com/th/id/R.5ff5ed5c1dd680eb5ed6331468a8ceeb?rik=YwtjFdpTwQ3U9w&pid=ImgRaw&r=0">
+                        <p>Brown Sugar Iced Coffee<span>$3.75</span></p>
+                    </div>
+                    <div class="menu-item">
+                        <img class="menu-img cold" src="https://images.pexels.com/photos/11100423/pexels-photo-11100423.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                        <p>Vanilla Sweet Cream Cold Brew<span>$4.85</span></p>
+                    </div>
+                    <div class="menu-item cold">
+                        <img class="menu-img" src="https://images.pexels.com/photos/25686146/pexels-photo-25686146/free-photo-of-cocktail-in-glass.jpeg">
+                        <p>Matcha Tea Iced Latte<span>$5.30</span></p>
+                    </div>
+                    <div class="menu-item cold">
+                        <img class="menu-img" src="https://images.pexels.com/photos/28744927/pexels-photo-28744927/free-photo-of-refreshing-iced-latte-with-brownie-on-marble-table.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                        <p>Caramel Toffee Iced Macchiato<span>$5.45</span></p>
+                    </div>
+                    <div class="menu-item cold">
+                        <img class="menu-img" src="https://images.pexels.com/photos/12285421/pexels-photo-12285421.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                        <p>Iced Lavender Latte<span>$6.15</span></p>
+                    </div>
+                    <div class="menu-item hot">
+                        <img class="menu-img" src="https://images.pexels.com/photos/1493080/pexels-photo-1493080.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                        <p>Earl Grey Tea<span>$2.55</span></p>
+                    </div>
+                    <div class="menu-item hot">
+                        <img class="menu-img" src="https://foodthinkers.com.ph/wp-content/uploads/2020/09/P091720021717_1.JPG">
+                        <p>Pistachio Latte<span>$5.25</span></p>
+                    </div>
+                    <div class="menu-item hot">
+                        <img class="menu-img" src="https://brewedbible.com/wp-content/uploads/2023/10/Flat-White-1024x576.jpg">
+                        <p>Flat White<span>$4.35</span></p>
+                    </div>
+                    <div class="menu-item hot">
+                        <img class="menu-img" src="https://th.bing.com/th/id/R.1e063b829c48ccf291f5dc0b5ca976c7?rik=7C6rx3vNRecI1g&riu=http%3a%2f%2fcdn.shopify.com%2fs%2ffiles%2f1%2f0898%2f3392%2ffiles%2fchai_tea_latte.jpg%3f4632231055902699320&ehk=ohG3Z%2bFIPOsiOE88TxXp%2bWyUJvoDngMlxqnkVhOwS7U%3d&risl=&pid=ImgRaw&r=0">
+                        <p>Chai Latte<span>$4.95</span></p>
+                    </div>
                 </div>
-                <div class="menu-item cold">
-                    <img class="menu-img">
-                    <p>Matcha Tea Iced Latte<span>$5.30</span></p>
-                </div>
-                <div class="menu-item cold">
-                    <img class="menu-img">
-                    <p>Caramel Toffee Iced Macchiato<span>$5.45</span></p>
-                </div>
-                <div class="menu-item cold">
-                    <img class="menu-img">
-                    <p>Iced Lavendar Oat Latte<span>$6.15</span></p>
-                </div>
-                <div class="menu-item hot">
-                    <img class="menu-img">
-                    <p>IEarl Grey Tea<span>$2.55</span></p>
-                </div>
-                <div class="menu-item hot">
-                    <img class="menu-img">
-                    <p>Pistachio Oat Latte<span>$5.25</span></p>
-                </div>
-                <div class="menu-item hot">
-                    <img class="menu-img">
-                    <p>Flat White<span>$4.35</span></p>
-                </div>
-                <div class="menu-item hot">
-                    <img class="menu-img">
-                    <p>Chai Latte<span>$4.95</span></p>
-                </div>
-            </div>
-
-        </section>
+            </section>
+            <section class="order-now-section" id="order-now">
+                <h3 class="order-now-title">Order Brewtique Coffee Online</h3>
+                <p>Skip the line. Get your favourites fresh and ready for pickup or delivery.</p>
+                <form class="order-form">
+                    <fieldset>
+                        <label for="drink-order">Select your drink:</label>
+                        <select id="drink-order">
+                            <option value="brown-sugar-iced-coffee">Brown Sugar Iced Coffee</option>
+                            <option value="vanilla-sweet-cream-cold-brew">Vanilla Sweet Cream Cold Brew</option>
+                            <option value="matcha-tea-iced-latte">Matcha Tea Iced Latte</option>
+                            <option value="iced-lavender-latte">Iced Lavender Latte</option>
+                            <option value="earl-grey-tea">Earl Grey Tea</option>
+                            <option vlaue="pistachio-latte">Pistachio Latte</option>
+                            <option value="flat-white">Flat White</option>
+                            <option value="chai-latte">Chai Latte</option>                 
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <p>Select size:</p>
+                        <div>
+                            <label><input type="radio" name="drink-size" value="small">Small</label>
+                            <label><input type="radio" name="drink-size" value="medium" checked>Medium</label>
+                            <label><input type="radio" name="drink-size" value="large">Large</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <label for="dairy-option">Dairy</label>
+                        <select id="dairy-option">
+                            <option value="2%-milk">2% Milk</option>
+                            <option value="oat-milk">Oat Milk</option>
+                            <option value="almond-milk">Almond Milk</option>
+                            <option value="coconut-milk">Coconut Milk</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <p>Add Ons</p>
+                        <label><input type="checkbox" value="whipped-cream">Whipped Cream</label>
+                        <label><input type="checkbox" value="cold-foam">Cold Foam</label>
+                        <label><input type="checkbox" value="toffee-drizzle">Toffee Drizzle</label>
+                        <label><input type="checkbox" value="double-espresso">Double Espresso Shot</label>
+                        <label><input type="checkbox" value="decaf">Decaf</label>
+                    </fieldset>
+                    <fieldset>
+                        <p>Order Pickup</p>
+                        <label>Your Name: <input type="text" name="name"></label>
+                        <label>Pickup Time: <input type="time" name="pickup-time"></label>
+                    </fieldset>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
         </main>
     </body>
+    <footer>
+        <h4>Contact Us</h4>
+        <p>(123) 456-7890</p>
+        <p>info@brewtique.com</p>
+        <p> 123 Brewtique St, Coffee City, ABC 123</p>
+        <div class="social-icon-div">
+
+        </div>
+        <p>&copy 2025 Brewtique. All rights reserved.</p>
+    </footer>
 </html>
