@@ -17,6 +17,7 @@ body {
 .hero-img {
     position: relative;
     width: 100%;
+    height: auto;
     padding: 0;
     margin: 0;
 }
@@ -34,13 +35,14 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Cormorant Garamond';
+    top: 0;
 }
 
 h1 {
     font-size: 7rem;
     margin-bottom: -20px;
     color: antiquewhite;
-    margin-top: -50px;
+    margin-top: -60px;
 
 }
 
@@ -74,6 +76,100 @@ h1 {
     font-size: 1.2rem;
     font-weight: bold;
 }
+
+
+.about-div {
+    padding: 70px 0;
+    text-align: center;
+    background-color: #fffaf0;
+}
+
+h3 {
+    color: #745539;
+    font-size: 2.8rem;
+    margin-bottom: 3rem;
+}
+
+.about-sec p {
+    font-size: 1.15rem;
+    width: 70%;
+    margin: 2rem auto;
+    color: #3e2c1c;
+    line-height: 2rem;
+}
+
+.barista-team-img {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+}
+
+.menu-section {
+    background: linear-gradient(
+        #f4e9dc 0%,
+        #e2cfc3 50%,
+        #d3b8ae 100%
+     );
+    margin: 0;
+    display: grid;
+}
+
+.menu-img {
+    width: 70%;
+    height: 700px;
+    object-fit: cover;
+}
+
+.menu-title {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.menu-summary {
+    text-align: center;
+    color:#6d5e58;
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-top: -30px;
+}
+
+.menu-filter {
+    display: flex;
+    margin: 10px auto;
+    justify-content: space-evenly;
+    width: 45%;
+    padding: 40px;
+    background-color: #f8f2eb;
+    color: #554945;
+    border-radius: 30px;
+}
+
+.menu-div {
+    display: grid;
+    grid-template-columns: repeat( 2, 1fr);
+    gap: 5rem;
+    margin: 5rem auto;
+    width: 95%;
+}
+
+.menu-item {
+    text-align: center;
+    color:#3e2c1c;
+    font-size: 1.2rem;
+}
+
+.menu-item p {
+    width: 100%;
+}
+
+.menu-item span {
+    text-align: right;
+}
+
+
 
 
 @keyframes hero-zoom {
