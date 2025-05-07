@@ -173,11 +173,9 @@ h3 {
 
 .menu-filter label {
     color:#704735;
+    font-size: 1.05rem;
 }
 
-.menu-filter input {
-    background-color: #806054;
-}
 
 .menu-div {
     display: grid;
@@ -256,7 +254,7 @@ h3 {
     margin: 0 0.25rem;
     font-family: serif;
     border-radius: 5px;
-    color: #635753;
+    color: #816253;
     font-size: 1rem;
     cursor: pointer;
 }
