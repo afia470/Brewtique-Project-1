@@ -171,9 +171,11 @@ h3 {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.menu-filter label {
+.filter-label {
     color:#704735;
     font-size: 1.05rem;
+    text-align: center;
+    gap: 0.5rem;
 }
 
 
