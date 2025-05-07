@@ -35,15 +35,15 @@
                 <div class="menu-filter">
                     <label for="fitler-all"><input type="radio" name="filter-button" id="filter-all" checked>All Drinks</label>
                     <label for="filter-hot"><input type="radio" name="filter-button" id="filter-hot">Hot Drinks</label>
-                    <label for="filter-cold"><input type="radio" name="filter-button" id="filter cold">Cold Drinks</label>
+                    <label for="filter-cold"><input type="radio" name="filter-button" id="filter-cold">Cold Drinks</label>
                 </div>
                 <div class="menu-div">
                     <div class="menu-item cold">
                         <img class="menu-img" src="https://th.bing.com/th/id/R.5ff5ed5c1dd680eb5ed6331468a8ceeb?rik=YwtjFdpTwQ3U9w&pid=ImgRaw&r=0">
                         <p>Brown Sugar Iced Coffee<span>$3.75</span></p>
                     </div>
-                    <div class="menu-item">
-                        <img class="menu-img cold" src="https://images.pexels.com/photos/11100423/pexels-photo-11100423.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                    <div class="menu-item cold">
+                        <img class="menu-img" src="https://images.pexels.com/photos/11100423/pexels-photo-11100423.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
                         <p>Vanilla Sweet Cream Cold Brew<span>$4.85</span></p>
                     </div>
                     <div class="menu-item cold">
@@ -78,7 +78,7 @@
                 <form class="order-form">
                     <fieldset>
                         <label for="drink-order">Select your drink:</label>
-                        <select id="drink-order">
+                        <select id="drink-order" name="drink-select">
                             <option value="brown-sugar-iced-coffee">Brown Sugar Iced Coffee</option>
                             <option value="vanilla-sweet-cream-cold-brew">Vanilla Sweet Cream Cold Brew</option>
                             <option value="matcha-tea-iced-latte">Matcha Tea Iced Latte</option>
@@ -99,7 +99,7 @@
                     </fieldset>
                     <fieldset>
                         <label for="dairy-option">Dairy option: </label>
-                        <select id="dairy-option">
+                        <select id="dairy-option" name="dairy-option">
                             <option value="2%-milk">2% Milk</option>
                             <option value="oat-milk">Oat Milk</option>
                             <option value="almond-milk">Almond Milk</option>
@@ -109,11 +109,11 @@
                     <fieldset>
                         <p>Add ons: </p>
                         <div class="add-ons-div">
-                            <label><input type="checkbox" value="whipped-cream">Whipped Cream</label>
-                            <label><input type="checkbox" value="cold-foam">Cold Foam</label>
-                            <label><input type="checkbox" value="toffee-drizzle">Toffee Drizzle</label>
-                            <label><input type="checkbox" value="double-espresso">Double Espresso Shot</label>
-                            <label><input type="checkbox" value="decaf">Decaf</label>
+                            <label><input name="add-ons" type="checkbox" value="whipped-cream">Whipped Cream</label>
+                            <label><input name="add-ons" type="checkbox" value="cold-foam">Cold Foam</label>
+                            <label><input name="add-ons" type="checkbox" value="toffee-drizzle">Toffee Drizzle</label>
+                            <label><input name="add-ons" type="checkbox" value="double-espresso">Double Espresso Shot</label>
+                            <label><input name="add-ons" type="checkbox" value="decaf">Decaf</label>
                         </div> 
                     </fieldset>
                     <fieldset>
@@ -127,12 +127,48 @@
                 </form>
             </section>
         </main>
+        <script>
+            const allFilter = document.getElementById('filter-all');
+            const hotFilter = document.getElementById('filter-hot');
+            const coldFilter = document.getElementById('filter-cold');
+            const menuItems = document.querySelectorAll('.menu-item');
+        
+            function showAllItems() {
+                menuItems.forEach(item => {
+                    item.style.display = 'block';
+                });
+            }
+        
+            function showHotItems() {
+                menuItems.forEach(item => {
+                    if (item.classList.contains('hot')) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            }
+        
+            function showColdItems() {
+                menuItems.forEach(item => {
+                    if (item.classList.contains('cold')) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            }
+        
+            allFilter.addEventListener('change', showAllItems);
+            hotFilter.addEventListener('change', showHotItems);
+            coldFilter.addEventListener('change', showColdItems);
+        </script>
     </body>
     <footer>
         <h4>Contact Us</h4>
-        <p>(123) 456-7890</p>
-        <p>info@brewtique.com</p>
-        <p> 123 Brewtique St, Coffee City, ABC 123</p>
+        <p><a href="tel:+1234567890">(123) 456-7890</a></p>
+        <p><a href="mailto:noreply@yourdomain.com">info@brewtique.com</a></p>
+        <p><a href="https://www.google.com/maps?q=123+Brewtique+Street,+City,+Country" target="_blank">123 Brewtique St, Coffee City, ABC 123</a></p>
         <div class="social-icon-div">
 
         </div>

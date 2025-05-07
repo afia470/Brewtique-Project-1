@@ -81,7 +81,11 @@ h1 {
 .about-div {
     padding: 70px 0;
     text-align: center;
-    background-color: #fffaf0;
+    background: linear-gradient(
+        #fffaf0 0%,
+        #f0dbcd 50%,
+        #e8c5b4 100%
+      );
 }
 
 h3 {
@@ -109,10 +113,10 @@ h3 {
 
 .menu-section {
     background: linear-gradient(
-        #f4e9dc 0%,
-        #e2cfc3 50%,
-        #d3b8ae 100%
-     );
+        #fffaf0 0%,
+        #f6e7db 50%,
+        #e4cabc 100%
+      );
     margin: 0;
     padding: 0;
     display: grid;
@@ -133,7 +137,7 @@ h3 {
 
 .menu-summary {
     text-align: center;
-    color:#6d5e58;
+    color:#99624a;
     font-style: italic;
     font-size: 1.2rem;
     margin-top: -30px;
@@ -182,32 +186,46 @@ h3 {
 
 .order-now-section {
     background: linear-gradient(
-        #f9f5f1,
-        #e5d3c2,
-        #f9f5f1);
+        #fffaf0 0%,
+        #f4dccc 50%,
+        #e6bfae 100%
+      );
     margin: 0;
     padding: 100px;
 }
 
-.order-now-title, .order-p {
+.order-now-title {
     text-align: center;
     margin: 0;
     padding-bottom: 2rem;
     color: #745539;
 }
 
+.order-p {
+    color:#99624a;
+    font-style: italic;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0;
+}
+
+
+
 .order-form {
     color: #75645f;
-    max-width: 100%;
+    width: 100%;
+    max-width: 1000px;
     margin: 50px auto;
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
     background-color: #f9f5f1;
     border-radius: 15px;
-    padding: 1.5rem;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 
 }
+
 
 .order-form input, select {
     padding: 0.5rem;
@@ -216,10 +234,11 @@ h3 {
     border-radius: 5px;
     color: #635753;
     font-size: 1rem;
+    cursor: pointer;
 }
 
 .order-form button {
-    background-color: #a07253;
+    background-color: #5b3e31;
     color: #fff;
     border: none;
     padding: 0.75rem;
@@ -228,6 +247,8 @@ h3 {
     font-family: 'Times New Roman', Times, serif;
     letter-spacing: 1px;
     font-weight: bold;
+    border-width: 0;
+    cursor: pointer;
 }
 
 .add-ons-div, .pick-up-div, .size-div {
@@ -239,13 +260,50 @@ h3 {
     
 }
 
-fieldset {
-    padding: 1.5rem 1.5rem;
+.order-form fieldset {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+
+
+.menu-item {
+    display: none;
 }
 
+/* Show all items when "All Drinks" is selected */
+#filter-all:checked ~ .menu-items .menu-item {
+    display: block;
+}
 
+/* Show only hot drinks when "Hot Drinks" is selected */
+#filter-hot:checked ~ .menu-items .menu-item.hot {
+    display: block;
+}
 
+/* Show only cold drinks when "Cold Drinks" is selected */
+#filter-cold:checked ~ .menu-items .menu-item.cold {
+    display: block;
+}
 
+footer {
+        background-color: #3f302c;
+        color: #ecf0f1;      
+        text-align: left;
+        padding: 20px 0;          
+        font-size: 14px;          
+        text-indent: 5rem;
+}
+
+footer h4 {
+    font-weight: bold;
+    font-size: 1.03rem;
+}
+
+a {
+    color:#e4cabc
+}
 @keyframes hero-zoom {
 
 }
