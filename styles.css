@@ -34,7 +34,7 @@ body {
     place-content: center;
     margin: 0;
     padding: 0;
-    font-family: 'Cormorant Garamond';
+    font-family: 'Poppins';
     top: 0;
 }
 
@@ -114,6 +114,7 @@ h3 {
         #d3b8ae 100%
      );
     margin: 0;
+    padding: 0;
     display: grid;
 }
 
@@ -121,6 +122,8 @@ h3 {
     width: 70%;
     height: 700px;
     object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
 }
 
 .menu-title {
@@ -145,28 +148,99 @@ h3 {
     background-color: #f8f2eb;
     color: #554945;
     border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .menu-div {
     display: grid;
     grid-template-columns: repeat( 2, 1fr);
     gap: 5rem;
-    margin: 5rem auto;
+    margin: 5rem auto 0 auto;
     width: 95%;
 }
 
 .menu-item {
     text-align: center;
-    color:#3e2c1c;
+    color:#554945;
     font-size: 1.2rem;
 }
 
 .menu-item p {
-    width: 100%;
+    display: flex;
+    width: 80%;
+    margin: 2rem auto;
+    background-color: #f8f2eb;
+    justify-content: space-around;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .menu-item span {
-    text-align: right;
+    font-weight: bold;
+}
+
+.order-now-section {
+    background: linear-gradient(
+        #f9f5f1,
+        #e5d3c2,
+        #f9f5f1);
+    margin: 0;
+    padding: 100px;
+}
+
+.order-now-title, .order-p {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 2rem;
+    color: #745539;
+}
+
+.order-form {
+    color: #75645f;
+    max-width: 100%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    background-color: #f9f5f1;
+    border-radius: 15px;
+    padding: 1.5rem;
+
+}
+
+.order-form input, select {
+    padding: 0.5rem;
+    margin: 0 0.25rem;
+    font-family: serif;
+    border-radius: 5px;
+    color: #635753;
+    font-size: 1rem;
+}
+
+.order-form button {
+    background-color: #a07253;
+    color: #fff;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.add-ons-div, .pick-up-div, .size-div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    text-indent: 2rem;
+    margin-top: 1.15rem;
+    
+}
+
+fieldset {
+    padding: 1.5rem 1.5rem;
 }
 
 
