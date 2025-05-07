@@ -102,7 +102,7 @@ h1 {
 }
 
 h3 {
-    color: #aa7d55;
+    color:  #816253;
     font-size: 2.8rem;
     margin-bottom: 3rem;
 }
@@ -162,12 +162,21 @@ h3 {
     display: flex;
     margin: 10px auto;
     justify-content: space-evenly;
+    text-align: center;
     width: 45%;
     padding: 40px;
     background-color: #f8f2eb;
     color: #554945;
     border-radius: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.menu-filter label {
+    color:#704735;
+}
+
+.menu-filter input {
+    background-color: #806054;
 }
 
 .menu-div {
@@ -180,7 +189,6 @@ h3 {
 
 .menu-item {
     text-align: center;
-    color:#554945;
     font-size: 1.2rem;
     width: 100%;
 }
@@ -194,6 +202,7 @@ h3 {
     padding: 5px;
     border-radius: 15px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    color:#806054;
 }
 
 .menu-item span {
@@ -228,7 +237,7 @@ h3 {
 
 .order-form {
     color: #75645f;
-    width: 100%;
+    width: 90%;
     max-width: 1000px;
     margin: 50px auto;
     display: flex;
