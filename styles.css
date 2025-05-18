@@ -325,7 +325,7 @@ footer h4 {
 a {
     color:#e4cabc
 }
-/* @keyframes hero-zoom { }*/
+
 
 
 
@@ -342,13 +342,25 @@ a {
     }
 
     .hero-text h2 {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
         margin-bottom: 30px;
     }
 
     .hero-text p {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
+
+    .menu-filter {
+        width: 65%;
+    }
+
+      .CTA-buttons {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
 }
 
 
@@ -375,7 +387,7 @@ a {
     font-size: 1rem;
   }
 
-  .CTA-buttons {
-    margin: auto;
-  }
+    .menu-filter {
+        width: 80%;
+    }
 }
