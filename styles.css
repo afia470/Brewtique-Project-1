@@ -359,6 +359,10 @@ a {
         width: 65%;
     }
 
+    .hero-img {
+        object-fit: cover;
+    }
+
 }
 
 
