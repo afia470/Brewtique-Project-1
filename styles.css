@@ -379,7 +379,7 @@ a {
     }
 
     .hero-text h1 {
-    font-size: 2rem;
+    font-size: 3.75rem;
     }
 
     .hero-text p {
@@ -389,6 +389,7 @@ a {
 
     .hero img {
     max-width: 100%;
+    min-width: 800px;
     height: auto;
     }
 
@@ -425,20 +426,21 @@ a {
 
 @media (max-width: 480px) {
   .hero-text h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .hero-text p {
-    font-size: 1rem;
+    font-size: 0.77rem;
   }
 
   .hero {
-    padding: 1rem 1rem;
+    padding: 4rem 1rem;
     gap: 1rem;
   }
 
-  .btn {
-    font-size: 0.95rem;
+  .button {
+    font-size: 0.5rem;
     padding: 0.6rem 1rem;
+    color: blue;
   }
 }
