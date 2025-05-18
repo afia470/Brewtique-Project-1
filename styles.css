@@ -38,7 +38,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #ffe8c2;
+    color: #ffd8c2;
     background: linear-gradient(
         rgba(0, 0, 0, 0.4),
         rgba(0, 0, 0, 0.5)
@@ -66,7 +66,7 @@ h1 {
 
 .hero-text p {
     font-size: 1.5rem;
-    color: #d6bd9c;
+    color: #fce4d6;
 }
 
 .CTA-buttons {
@@ -84,7 +84,7 @@ h1 {
     border-radius: 30px;
     text-decoration: none;
     color:#f0e4d1;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     font-weight: bold;
 }
 
@@ -152,7 +152,7 @@ h3 {
     text-align: center;
     color:#99624a;
     font-style: italic;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-top: -30px;
 }
 
@@ -226,12 +226,10 @@ h3 {
 .order-p {
     color:#99624a;
     font-style: italic;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     text-align: center;
     margin: 0;
 }
-
-
 
 .order-form {
     color: #75645f;
@@ -245,7 +243,7 @@ h3 {
     border-radius: 15px;
     padding: 2rem;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-
+    font-size: 1.15rem;
 }
 
 
@@ -255,7 +253,7 @@ h3 {
     font-family: serif;
     border-radius: 5px;
     color: #816253;
-    font-size: 1rem;
+    font-size: 1.05rem;
     cursor: pointer;
 }
 
