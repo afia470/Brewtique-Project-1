@@ -366,10 +366,6 @@ a {
 }
 
 
-@media screen and (max-width: 768px) {
-    
-
-}
 
 @media (max-width: 480px) {
   .hero-text h1 {
@@ -457,7 +453,7 @@ a {
     width: 80%;
     }
 
-     select {
+    select {
     margin: 0 0.25rem;
     
     }
