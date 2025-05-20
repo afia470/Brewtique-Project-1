@@ -43,10 +43,9 @@ body {
         rgba(0, 0, 0, 0.4),
         rgba(0, 0, 0, 0.5)
     );
-
+    margin: 0;
     font-family: 'Poppins';
-    text-align: center;
-    padding: 1rem;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -365,16 +364,18 @@ a {
 }
 
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .hero {
     flex-direction: column;
     align-items: center;
     padding: 0;
     gap: 1.5rem;
+    justify-content: center;
+    margin: 0;
     }
 
     .hero-text {
-    text-align: center;
+
     max-width: 100%;
     }
 
@@ -384,14 +385,10 @@ a {
 
     .hero-text p {
     font-size: 1.1rem;
-    margin: 1rem 0;
+    margin: 1rem auto;
+    text-align: center;
     }
 
-    .hero img {
-    max-width: 100%;
-    min-width: 800px;
-    height: auto;
-    }
 
     .button {
     font-size: 1rem;
@@ -426,16 +423,35 @@ a {
 
 @media (max-width: 480px) {
   .hero-text h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1.25rem;
   }
 
   .hero-text p {
-    font-size: 0.77rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* HERO IMAGE: remove gray bars and make it fill screen */
+  .hero {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
   }
 
-  .hero {
-    padding: 4rem 1rem;
-    gap: 1rem;
-  }
+  .hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    min-width: 800px;
+  } 
 
 }
