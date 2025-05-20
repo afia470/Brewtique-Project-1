@@ -441,10 +441,7 @@ a {
         width: 100%;
     }
 
-    .order-form input {
-        margin: 10px;
-        text-indent: 0;
-    }
+    
 
     #pick-up-name {
         margin: 10px 0;
@@ -459,11 +456,16 @@ a {
     .order-form fieldset {
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        gap: 0rem;
         margin-bottom: 1rem;
         padding: 1rem;
         border: 1px solid #ccc;
         border-radius: 8px;
         justify-content: center;
+    }
+
+    .order-form input {
+        margin: 10px;
+        text-indent: 0;
     }
 }
