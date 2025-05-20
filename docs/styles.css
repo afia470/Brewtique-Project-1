@@ -351,27 +351,15 @@ a {
 
 @media (max-width: 480px) {
     .hero-text h1 {
-        font-size: 2.5rem;
+        font-size: 3rem;
+        max-width: 90%;
     }
 
     .hero-text h2 {
-        font-size: 1.25rem;
+        font-size: 2rem;
     }
 
-    .hero-text p {
-        font-size: 1rem;
-    }
-
-    .menu-filter {
-        box-sizing: content-box;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 10px;
-        width: auto;
-        padding: 15px 30px;
-    }
+    
 }
 
 @media screen and (max-width: 768px) {
@@ -397,7 +385,7 @@ a {
     }
 
     h1 {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 
     .CTA-buttons {
@@ -419,31 +407,42 @@ a {
     }
 
     .hero-text p {
-        font-size: 1.1rem;
+        font-size: 1.25rem;
         margin: 1rem auto;
         text-align: center;
     }
 
     .button {
-        font-size: 1rem;
+        font-size: 1.1rem;
         padding: 1rem 1.5rem;
     }
 
     .menu-filter {
-        width: 80%;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    width: auto;
+    padding: 15px 30px;
     }
+
 
     select {
         margin: 0 0.25rem;
     }
 
-    .order-form {
-        width: 100%;
+    .order-now-section {
+        padding: 40px;
+        
     }
 
-    
+    .order-form {
+        width: 80%;
+    }
 
-    #pick-up-name {
+    #pick-up-name, select {
         margin: 10px 0;
         text-indent: 0;
     }
