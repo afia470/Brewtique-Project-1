@@ -323,7 +323,7 @@ footer a:focus {
   }
 
   .CTA-buttons {
-    width: 100%;
+    width: 50%;
     flex-direction: column;
     gap: 1rem;
   }
@@ -344,15 +344,20 @@ footer a:focus {
 
 @media (max-width: 480px) {
   .hero-text h1 {
-    font-size: 2.4rem;
+    font-size: 2.75rem;
   }
 
   .hero-text h2 {
-    font-size: 1.1rem;
+    font-size: 1.45rem;
+    font-weight: normal;
   }
 
-  .hero-text p {
-    font-size: 0.9rem;
+  .hero-text p, p, input, label {
+    font-size: 1.15rem;
+  }
+
+  .about-title, .menu-title, .order-now-title {
+    font-size: 2rem;
   }
 
   .menu-div {
