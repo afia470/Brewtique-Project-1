@@ -309,6 +309,9 @@ footer a:focus {
 
 /* Responsive Breakpoints */
 @media (max-width: 768px) {
+  .hero-text {
+    margin: auto 1rem;
+  }
   .hero-text h1 {
     font-size: 3rem;
   }
