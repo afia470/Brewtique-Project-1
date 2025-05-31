@@ -255,7 +255,9 @@ html, body {
   border-radius: 6px;
   border: 1px solid #ccc;
   box-sizing: border-box;
-  font-family: 'Cormorant Garamond', serif;}
+  font-family: 'Cormorant Garamond', serif;
+  color: #5b4932;
+}
 
 .size-div, .add-ons-div, .pick-up-div {
   display: flex;
